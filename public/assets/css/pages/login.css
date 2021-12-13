@@ -1,0 +1,91 @@
+.login .container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.login .container .content {
+  width: 43%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: #e52d27;
+}
+
+.login .container .content form {
+  max-width: 460px;
+  width: 100%;
+  padding: 3rem;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.login .container .content form .profile {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.login .container .content form .profile .image {
+  margin: auto;
+  width: fit-content;
+}
+
+.login .container .content form .profile .image i {
+  margin: auto;
+  font-size: 5rem;
+  color: white;
+}
+
+.login .container .content form .profile p{
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.login .container .content form .form_input input {
+  background-color: white;
+}
+
+.login .container .content form .form_input label {
+  color: white;
+}
+
+.login .container .content form .form_button {
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 8px;
+  border: 1px solid white;
+  width: 80%;
+}
+
+.login .photo {
+  width: 58%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 10%;
+
+}
+
+.login .form_error {
+  color: white;
+}
+
+.login .status-success {
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .login .photo {
+    display: none;
+  }
+  .login .container .content {
+
+    width: 100%;
+  }
+}

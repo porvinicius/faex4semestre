@@ -1,0 +1,91 @@
+#items-wrapper {
+  width: 99vw;
+  position: relative;
+
+}
+
+.shaddow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  pointer-events: none;
+}
+
+#items {
+  display: flex;
+
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.item {
+
+  flex: none;
+
+  display: block;
+  text-decoration: none;
+  color: black;
+
+  width: 100%;
+  height: 500px;
+
+  scroll-snap-align: start;
+
+}
+
+.item .img {
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.desc {
+  background-color: rgba(0,0,0,0.4);
+  height: 100%;
+  color: white;
+  z-index: 3;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem 2rem;
+}
+
+.desc h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.desc span {
+  font-weight: bold;
+}
+
+/* customize scrollbar */
+#items::-webkit-scrollbar{
+  height: 10px;
+  width: 10px;
+}
+
+#items::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#items::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.5);
+  /* hide scrollbar*/
+  visibility: hidden;
+  border-radius: 5px;
+}
+
+/* show scrollbar when hover items-wrapper */
+#items-wrapper:hover #items::-webkit-scrollbar-thumb {
+  visibility: visible;
+}

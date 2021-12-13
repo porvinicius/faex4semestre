@@ -1,0 +1,44 @@
+.form_input {
+  width: 100%;
+  margin: 1.8rem 0;
+}
+
+.form_input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.form_input label {
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+
+
+.form_input .form_error {
+  display: flex;
+  padding: 0;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.form_input span.form_error.active {
+  border: 1px solid red;
+  padding: 0.4em;
+}
+.form_button {
+  font-size: 15pt;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  display: block;
+
+}
+
+.form_has {
+  color: white;
+}

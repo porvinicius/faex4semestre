@@ -1,0 +1,35 @@
+header {
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.header_adm {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_adm__side_right {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.header_adm__side_right__logo {
+  display: block;
+  width: 100%;
+  max-width: 80px;
+  height: 90%;
+  margin-left: 1rem;
+}
+
+#bars {
+  color: red;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.header_adm__user {
+  margin-right: 1rem;
+}

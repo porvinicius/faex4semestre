@@ -1,0 +1,51 @@
+.content {
+  max-width: 1300px;
+  width: 100%;
+  padding: 3rem;
+  margin: 3rem auto;
+}
+
+.content__title {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.content__title:after {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  content: "";
+  width: 200px;
+  height: 10px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.room__list {
+  display: flex;
+  margin: 4rem 0;
+  flex-wrap: wrap;
+
+}
+
+.room {
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 1rem;
+  background-color:white;
+  border-radius:8px;
+  padding: 1rem;
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.3)
+}
+
+.room h2 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+body {
+  min-height: 140vh;
+}

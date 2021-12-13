@@ -1,0 +1,95 @@
+.reserve {
+  background-color: white;
+  margin: 1rem;
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  min-width: fit-content;
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+.reserve__img {
+  position: relative;
+}
+
+.reserve__img__status {
+  display: block;
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  margin: auto;
+  width: fit-content;
+  background: limegreen;
+  padding: .5rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.reserve__remove {
+  display: block;
+  padding: .4rem;
+  width: fit-content;
+  margin: auto;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+
+div.ch {
+  top: 195px;
+  left: 15px;
+}
+
+
+.reserve__desc {
+  margin-left: 1rem;
+}
+
+.reserve__desc__title {
+  font-size: 1.3rem;
+}
+
+.reserve__desc__rooms {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.reserve__desc__reserve__group {
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.reserve__desc__reserve__type {
+  font-weight: 800;
+  margin-right: .2rem;
+}
+
+.reserve__desc__check  {
+  display: flex;
+  font-size: 11pt;
+  justify-content: space-between;
+}
+
+.reserve__dev__check__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.reserve__desc__check__type {
+  font-weight: bold;
+}
+
+
+@media (max-width: 500px) {
+  .reserve {
+    margin: 1rem auto;
+    flex-wrap: wrap;
+    width: 240px;
+    min-width: 0;
+  }
+
+  .reserve__img {
+    margin-bottom: 1rem;
+  }
+}
