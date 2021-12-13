@@ -1,0 +1,23 @@
+{
+  "name": "hotel/jenius",
+  "description": "Fase 03 web Alexandro",
+  "minimum-stability": "alpha",
+  "license": "MTI",
+  "authors": [
+    {
+      "name": "Jeffersonll",
+      "email": "bassj90@gmail.com"
+    }
+  ],
+
+  "autoload": {
+    "psr-4": {
+      "App\\": "./app"
+    }
+  },
+  "require": {
+    "ext-pdo": "*",
+    "ext-mbstring": "*",
+    "ext-json": "*"
+  }
+}
